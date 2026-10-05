@@ -23,11 +23,17 @@
   <div class="publication-links" aria-label="Publication resources">
     <a class="resource" href="assets/paper.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6zM14 2v5h4M9 12h6M9 16h6"/></svg>Paper</a>
     <button class="resource pending" data-resource="arxiv" type="button" aria-disabled="true" title="arXiv link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 3 14 18M7 3l12 18M18 3 5 18"/></svg>arXiv<span class="sr-only"> — link coming soon</span></button>
-    <button class="resource pending" data-resource="video" type="button" aria-disabled="true" title="Video link coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg>Video<span class="sr-only"> — link coming soon</span></button>
+    <a class="resource" data-resource="video" href="#video"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg>Video</a>
   </div>
-  <p class="resource-note" id="resource-status" role="status">arXiv and video links coming soon.</p>
+  <p class="resource-note" id="resource-status" role="status">arXiv link coming soon.</p>
 </header>
 <main>
+  <section class="hero-video container" id="video" aria-label="ARISE presentation video">
+    <video controls playsinline preload="none" poster="assets/videos/long-clean.jpg" width="854" height="480" aria-label="ARISE: From Social Reasoning to Embodied Interaction">
+      <source src="assets/videos/long-clean.mp4" type="video/mp4">
+      Your browser does not support embedded video. <a href="assets/videos/long-clean.mp4">Download the presentation video</a>.
+    </video>
+  </section>
   <section class="teaser container" aria-label="ARISE at a glance">
     <figure>
       <a href="assets/teaser.pdf" target="_blank" rel="noopener" aria-label="Open the original ARISE teaser PDF"><img src="assets/teaser.webp" alt="ARISE on Sophia: multi-round observations and dialogue alongside coordinated speech, facial expressions, and robot-native gestures." width="2400" height="1023" fetchpriority="high"></a>
@@ -60,6 +66,30 @@
     <figure>
       <div class="visualization-image" role="region" aria-label="Six-turn desk-cleaning interaction; scroll horizontally on small screens" tabindex="0"><a href="assets/clean-up-desk.pdf" target="_blank" rel="noopener" aria-label="Open the original desk-cleaning interaction PDF"><img src="assets/clean-up-desk.webp" alt="Sophia guides a user to gather scattered pens, gives positive feedback after the user stacks books, and suggests placing a laptop in the central empty area of the desk." width="3000" height="342" loading="lazy"></a></div>
       <figcaption><strong>Clean up desk.</strong> Sophia provides visually grounded guidance, proactively acknowledges progress, and suggests an appropriate place for the user's laptop.</figcaption>
+    </figure>
+  </section>
+  <section class="section container demo-videos" id="demos">
+    <h2>Interaction Videos</h2>
+    <figure>
+      <h3 id="birthdaygift-title">Birthday Gift</h3>
+      <video controls playsinline preload="none" poster="assets/videos/birthdaygift.jpg" width="1920" height="1080" aria-labelledby="birthdaygift-title">
+        <source src="assets/videos/birthdaygift.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/videos/birthdaygift.mp4">Download Birthday Gift</a>.
+      </video>
+    </figure>
+    <figure>
+      <h3 id="whosebag-title">Whose Bag</h3>
+      <video controls playsinline preload="none" poster="assets/videos/whosebag.jpg" width="1920" height="1080" aria-labelledby="whosebag-title">
+        <source src="assets/videos/whosebag.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/videos/whosebag.mp4">Download Whose Bag</a>.
+      </video>
+    </figure>
+    <figure>
+      <h3 id="cleandesk-title">Clean Up Desk</h3>
+      <video controls playsinline preload="none" poster="assets/videos/cleandesk.jpg" width="1920" height="1080" aria-labelledby="cleandesk-title">
+        <source src="assets/videos/cleandesk.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/videos/cleandesk.mp4">Download Clean Up Desk</a>.
+      </video>
     </figure>
   </section>
 </main>

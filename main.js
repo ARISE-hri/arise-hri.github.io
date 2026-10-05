@@ -14,5 +14,14 @@ document.querySelectorAll('[data-resource]').forEach(button => {
     button.replaceWith(anchor);
   }
 });
-const pending = ['arxiv', 'video'].filter(key => !/^https:\/\//i.test(links[key] || ''));
+const pending = ['arxiv'].filter(key => !/^https:\/\//i.test(links[key] || ''));
 document.getElementById('resource-status').textContent = pending.length ? pending.map(key => key === 'arxiv' ? 'arXiv' : 'Video').join(' and ') + ' link' + (pending.length > 1 ? 's' : '') + ' coming soon.' : '';
+
+// Keep each interaction audible when switching between the videos.
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('play', () => {
+    document.querySelectorAll('video').forEach(other => {
+      if (other !== video) other.pause();
+    });
+  });
+});
