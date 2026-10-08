@@ -1,5 +1,4 @@
-// Add public URLs here when the preprint and video are released.
+// Add the public video URL here when it is released.
 window.ARISE_LINKS = {
-  arxiv: '',
   video: ''
 };
